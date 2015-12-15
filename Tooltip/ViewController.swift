@@ -54,6 +54,14 @@ class ViewController: UIViewController {
         return NSString(string: totalCostLabel.text!).doubleValue
     }
     
+    func getMinTipPercentage() -> Int {
+        return NSString(string: tipSliderMinLabel.text!).integerValue
+    }
+    
+    func getMaxTipPercentage() -> Int {
+        return NSString(string: tipSliderMaxLabel.text!).integerValue
+    }
+    
     /*
             Set Functions
     */
@@ -69,6 +77,16 @@ class ViewController: UIViewController {
     func setTotalCost(newV: Double){
         totalCostLabel.text = String(format: "$%.2f", newV)
     }
+    
+    func setMinTipPercentage(newV: Int){
+        tipSliderMinLabel.text = "\(newV)%"
+    }
+    
+    func setMaxTipPercentage(newV: Int){
+        tipSliderMaxLabel.text = "\(newV)%"
+    }
+    
+    
     
     /*
             Actions
