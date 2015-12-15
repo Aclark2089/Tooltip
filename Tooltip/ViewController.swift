@@ -94,6 +94,34 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    /*
+            View Change Funcs
+    */
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("view did disappear")
+    }
+
+
+    /*
+            Swift On Load Funcs
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +140,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 }
 
