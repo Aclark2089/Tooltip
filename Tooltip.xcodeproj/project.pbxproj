@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA9B6A6F1C1F925500297DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B6A6E1C1F925500297DF9 /* AppDelegate.swift */; };
+		FA9B6A711C1F925500297DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B6A701C1F925500297DF9 /* ViewController.swift */; };
+		FA9B6A741C1F925500297DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9B6A721C1F925500297DF9 /* Main.storyboard */; };
+		FA9B6A761C1F925500297DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9B6A751C1F925500297DF9 /* Assets.xcassets */; };
+		FA9B6A791C1F925500297DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9B6A771C1F925500297DF9 /* LaunchScreen.storyboard */; };
+		FA9B6A841C1F925500297DF9 /* TooltipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B6A831C1F925500297DF9 /* TooltipTests.swift */; };
+		FA9B6A8F1C1F925500297DF9 /* TooltipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B6A8E1C1F925500297DF9 /* TooltipUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA9B6A801C1F925500297DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9B6A631C1F925500297DF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9B6A6A1C1F925500297DF9;
+			remoteInfo = Tooltip;
+		};
+		FA9B6A8B1C1F925500297DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9B6A631C1F925500297DF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9B6A6A1C1F925500297DF9;
+			remoteInfo = Tooltip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA9B6A6B1C1F925500297DF9 /* Tooltip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tooltip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9B6A6E1C1F925500297DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA9B6A701C1F925500297DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA9B6A731C1F925500297DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA9B6A751C1F925500297DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA9B6A781C1F925500297DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9B6A7A1C1F925500297DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9B6A7F1C1F925500297DF9 /* TooltipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooltipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9B6A831C1F925500297DF9 /* TooltipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipTests.swift; sourceTree = "<group>"; };
+		FA9B6A851C1F925500297DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA9B6A8A1C1F925500297DF9 /* TooltipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TooltipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9B6A8E1C1F925500297DF9 /* TooltipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TooltipUITests.swift; sourceTree = "<group>"; };
+		FA9B6A901C1F925500297DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA9B6A681C1F925500297DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A7C1C1F925500297DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A871C1F925500297DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA9B6A621C1F925500297DF9 = {
+			isa = PBXGroup;
+			children = (
+				FA9B6A6D1C1F925500297DF9 /* Tooltip */,
+				FA9B6A821C1F925500297DF9 /* TooltipTests */,
+				FA9B6A8D1C1F925500297DF9 /* TooltipUITests */,
+				FA9B6A6C1C1F925500297DF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA9B6A6C1C1F925500297DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B6A6B1C1F925500297DF9 /* Tooltip.app */,
+				FA9B6A7F1C1F925500297DF9 /* TooltipTests.xctest */,
+				FA9B6A8A1C1F925500297DF9 /* TooltipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA9B6A6D1C1F925500297DF9 /* Tooltip */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B6A6E1C1F925500297DF9 /* AppDelegate.swift */,
+				FA9B6A701C1F925500297DF9 /* ViewController.swift */,
+				FA9B6A721C1F925500297DF9 /* Main.storyboard */,
+				FA9B6A751C1F925500297DF9 /* Assets.xcassets */,
+				FA9B6A771C1F925500297DF9 /* LaunchScreen.storyboard */,
+				FA9B6A7A1C1F925500297DF9 /* Info.plist */,
+			);
+			path = Tooltip;
+			sourceTree = "<group>";
+		};
+		FA9B6A821C1F925500297DF9 /* TooltipTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B6A831C1F925500297DF9 /* TooltipTests.swift */,
+				FA9B6A851C1F925500297DF9 /* Info.plist */,
+			);
+			path = TooltipTests;
+			sourceTree = "<group>";
+		};
+		FA9B6A8D1C1F925500297DF9 /* TooltipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA9B6A8E1C1F925500297DF9 /* TooltipUITests.swift */,
+				FA9B6A901C1F925500297DF9 /* Info.plist */,
+			);
+			path = TooltipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA9B6A6A1C1F925500297DF9 /* Tooltip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9B6A931C1F925500297DF9 /* Build configuration list for PBXNativeTarget "Tooltip" */;
+			buildPhases = (
+				FA9B6A671C1F925500297DF9 /* Sources */,
+				FA9B6A681C1F925500297DF9 /* Frameworks */,
+				FA9B6A691C1F925500297DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tooltip;
+			productName = Tooltip;
+			productReference = FA9B6A6B1C1F925500297DF9 /* Tooltip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA9B6A7E1C1F925500297DF9 /* TooltipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9B6A961C1F925500297DF9 /* Build configuration list for PBXNativeTarget "TooltipTests" */;
+			buildPhases = (
+				FA9B6A7B1C1F925500297DF9 /* Sources */,
+				FA9B6A7C1C1F925500297DF9 /* Frameworks */,
+				FA9B6A7D1C1F925500297DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9B6A811C1F925500297DF9 /* PBXTargetDependency */,
+			);
+			name = TooltipTests;
+			productName = TooltipTests;
+			productReference = FA9B6A7F1C1F925500297DF9 /* TooltipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA9B6A891C1F925500297DF9 /* TooltipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA9B6A991C1F925500297DF9 /* Build configuration list for PBXNativeTarget "TooltipUITests" */;
+			buildPhases = (
+				FA9B6A861C1F925500297DF9 /* Sources */,
+				FA9B6A871C1F925500297DF9 /* Frameworks */,
+				FA9B6A881C1F925500297DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA9B6A8C1C1F925500297DF9 /* PBXTargetDependency */,
+			);
+			name = TooltipUITests;
+			productName = TooltipUITests;
+			productReference = FA9B6A8A1C1F925500297DF9 /* TooltipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA9B6A631C1F925500297DF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Alex Clark";
+				TargetAttributes = {
+					FA9B6A6A1C1F925500297DF9 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FA9B6A7E1C1F925500297DF9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA9B6A6A1C1F925500297DF9;
+					};
+					FA9B6A891C1F925500297DF9 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA9B6A6A1C1F925500297DF9;
+					};
+				};
+			};
+			buildConfigurationList = FA9B6A661C1F925500297DF9 /* Build configuration list for PBXProject "Tooltip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA9B6A621C1F925500297DF9;
+			productRefGroup = FA9B6A6C1C1F925500297DF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA9B6A6A1C1F925500297DF9 /* Tooltip */,
+				FA9B6A7E1C1F925500297DF9 /* TooltipTests */,
+				FA9B6A891C1F925500297DF9 /* TooltipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA9B6A691C1F925500297DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B6A791C1F925500297DF9 /* LaunchScreen.storyboard in Resources */,
+				FA9B6A761C1F925500297DF9 /* Assets.xcassets in Resources */,
+				FA9B6A741C1F925500297DF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A7D1C1F925500297DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A881C1F925500297DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA9B6A671C1F925500297DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B6A711C1F925500297DF9 /* ViewController.swift in Sources */,
+				FA9B6A6F1C1F925500297DF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A7B1C1F925500297DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B6A841C1F925500297DF9 /* TooltipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA9B6A861C1F925500297DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9B6A8F1C1F925500297DF9 /* TooltipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA9B6A811C1F925500297DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9B6A6A1C1F925500297DF9 /* Tooltip */;
+			targetProxy = FA9B6A801C1F925500297DF9 /* PBXContainerItemProxy */;
+		};
+		FA9B6A8C1C1F925500297DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9B6A6A1C1F925500297DF9 /* Tooltip */;
+			targetProxy = FA9B6A8B1C1F925500297DF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA9B6A721C1F925500297DF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9B6A731C1F925500297DF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA9B6A771C1F925500297DF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9B6A781C1F925500297DF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA9B6A911C1F925500297DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA9B6A921C1F925500297DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA9B6A941C1F925500297DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Tooltip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.Tooltip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA9B6A951C1F925500297DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Tooltip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.Tooltip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FA9B6A971C1F925500297DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TooltipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.TooltipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tooltip.app/Tooltip";
+			};
+			name = Debug;
+		};
+		FA9B6A981C1F925500297DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TooltipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.TooltipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tooltip.app/Tooltip";
+			};
+			name = Release;
+		};
+		FA9B6A9A1C1F925500297DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TooltipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.TooltipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tooltip;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FA9B6A9B1C1F925500297DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TooltipUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexClark.TooltipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tooltip;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA9B6A661C1F925500297DF9 /* Build configuration list for PBXProject "Tooltip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B6A911C1F925500297DF9 /* Debug */,
+				FA9B6A921C1F925500297DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA9B6A931C1F925500297DF9 /* Build configuration list for PBXNativeTarget "Tooltip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B6A941C1F925500297DF9 /* Debug */,
+				FA9B6A951C1F925500297DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA9B6A961C1F925500297DF9 /* Build configuration list for PBXNativeTarget "TooltipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B6A971C1F925500297DF9 /* Debug */,
+				FA9B6A981C1F925500297DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA9B6A991C1F925500297DF9 /* Build configuration list for PBXNativeTarget "TooltipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA9B6A9A1C1F925500297DF9 /* Debug */,
+				FA9B6A9B1C1F925500297DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA9B6A631C1F925500297DF9 /* Project object */;
+}
