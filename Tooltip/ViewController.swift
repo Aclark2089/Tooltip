@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    /*
+
+            Outlets
+    */
+    
     // Tip Cost
     @IBOutlet var tipCostLabel: UILabel!
     
@@ -29,35 +34,84 @@ class ViewController: UIViewController {
     @IBOutlet var tipSliderMinLabel: UILabel!
     @IBOutlet var tipSliderMaxLabel: UILabel!
     
+    /*
+            Get Functions
+    */
+    
+    func getTipPercentage() -> Double {
+        return (NSString(string: tipPercentLabel.text!).doubleValue / 100)
+    }
+    
+    func getCost() -> Double {
+        return NSString(string: costTextField.text!).doubleValue
+    }
+    
+    func getTipCost() -> Double {
+        return NSString(string: tipCostLabel.text!).doubleValue
+    }
+    
+    func getTotalCost() -> Double {
+        return NSString(string: totalCostLabel.text!).doubleValue
+    }
+    
+    /*
+            Set Functions
+    */
+    
+    func setTipPercentage(newV: Double) {
+        tipPercentLabel.text = "\(Int(newV))%"
+    }
+    
+    func setTipCost(newV: Double){
+        tipCostLabel.text = String(format: "$%.2f", newV)
+    }
+    
+    func setTotalCost(newV: Double){
+        totalCostLabel.text = String(format: "$%.2f", newV)
+    }
+    
+    /*
+            Actions
+    */
+   
+    @IBAction func tipSliderOnValueChanged(sender: AnyObject) {
+        let value = Double(tipSlider.value)
+        let currentCost = getCost()
+        setTipPercentage(value)
+        setTipCost(currentCost * getTipPercentage())
+        setTotalCost((currentCost * getTipPercentage()) + currentCost)
+    }
+    
+    
+    @IBAction func costTextFieldOnEditingChanged(sender: AnyObject) {
+        let cost = getCost()
+        let tip = (cost * getTipPercentage())
+        setTipCost(tip)
+        setTotalCost(tip + cost)
+    }
+
+    @IBAction func viewOnTap(sender: AnyObject) {
+        view.endEditing(true)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tipCostLabel.text = "- - -"
-        totalCostLabel.text = "- - -"
+        tipCostLabel.text = "$"
+        totalCostLabel.text = "$"
         
         let startPercent = (Int(tipSliderMaxLabel.text!)! + Int(tipSliderMinLabel.text!)!) / 2
         
         tipPercentLabel.text = "\(startPercent)%"
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    @IBAction func costTextFieldOnEditingChanged(sender: AnyObject) {
-        
-        if let cost = Double(costTextField.text!) {
-            let tipCost = cost
-            tipCostLabel.text = String(format: "$%.2f", tipCost)
-            totalCostLabel.text = String(format: "$%.2f", cost)
-        }
-        
-    }
-
 
 }
 
