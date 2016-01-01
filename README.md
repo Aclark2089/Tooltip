@@ -18,7 +18,11 @@ The app is selected from the home screen and from here a tip amount is selected.
 
 After a bill amount has been entered into the input field, the tip and total amounts will update to match it. The tip percentage can be altered based on the slider, and the tip and total costs will live update to match the amount of tip given based on the bill.
 
+![Setup Custom Slider Bounds](https://cloud.githubusercontent.com/assets/6467543/12069475/bb39064e-aff7-11e5-877c-f20dabe7fe6a.gif)
+
 You can set custom bounds for the tip slider, allowing you to easily change the window of selection for the slider. This is done using the settings screen.
+
+![Save and Reset Settings](https://cloud.githubusercontent.com/assets/6467543/12069477/bef583d4-aff7-11e5-86be-c13e9de8d453.gif)
 
 Finally, the settings are saved using the save button, and custom settings can easily be reset using the reset button featured in the settings screen.
 
