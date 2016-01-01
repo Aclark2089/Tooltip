@@ -12,6 +12,8 @@ Tooltip is a simple iOS application designed for iPhone 5 / 6
 
 # Walkthrough
 
+![Basic App Use](https://cloud.githubusercontent.com/assets/6467543/12069473/b7044980-aff7-11e5-8a60-f58834ac9bc3.gif)
+
 The app is selected from the home screen and from here a tip amount is selected. This tip amount defaults to the median of the selected bounds of the application's sliders settings. These settings can be changed in the settings screen.   
 
 After a bill amount has been entered into the input field, the tip and total amounts will update to match it. The tip percentage can be altered based on the slider, and the tip and total costs will live update to match the amount of tip given based on the bill.
