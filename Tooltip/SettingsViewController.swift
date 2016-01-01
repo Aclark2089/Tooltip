@@ -15,8 +15,11 @@ class SettingsViewController: UIViewController {
     @IBOutlet var sliderMaxSettingsLabel: UITextField!
     
     // Settings Buttons
+    @IBOutlet var saveSettingsButton: UIButton!
     @IBOutlet var resetSettingsButton: UIButton!
-    @IBOutlet var updateSettingsButton: UIButton!
+    
+    // User Defaults
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     /*
             Get Funcs
@@ -43,15 +46,26 @@ class SettingsViewController: UIViewController {
     }
     
     
-    
     /*
             Actions
     */
     
-    @IBAction func resetSettingsOnPress(sender: AnyObject) {
+    @IBAction func saveSettingsOnPress(sender: AnyObject) {
+        defaults.setInteger(getSettingsSliderMin(), forKey: "default_tip_slider_min")
+        defaults.setInteger(getSettingsSliderMax(), forKey: "default_tip_slider_max")
+        defaults.setBool(true, forKey: "default_custom_bounds")
+        defaults.setBool(true, forKey: "default_settings_changed")
+        defaults.synchronize()
     }
     
-    @IBAction func updateSettingsOnPress(sender: AnyObject) {
+    @IBAction func resetSettingsOnPress(sender: AnyObject) {
+        defaults.setInteger(0, forKey: "default_tip_slider_min")
+        defaults.setInteger(30, forKey: "default_tip_slider_max")
+        defaults.setBool(false, forKey: "default_custom_bounds")
+        defaults.setBool(true, forKey: "default_settings_changed")
+        defaults.synchronize()
+        setSettingsSliderMin(0)
+        setSettingsSliderMax(30)
     }
     
     @IBAction func settingsViewOnTap(sender: AnyObject) {
@@ -66,6 +80,14 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if defaults.boolForKey("default_custom_bounds") {
+            setSettingsSliderMin(defaults.integerForKey("default_tip_slider_min"))
+            setSettingsSliderMax(defaults.integerForKey("default_tip_slider_max"))
+        }
+        else {
+            setSettingsSliderMin(0)
+            setSettingsSliderMax(30)
+        }
     }
 
     override func didReceiveMemoryWarning() {

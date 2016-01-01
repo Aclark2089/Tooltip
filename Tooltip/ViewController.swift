@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     @IBOutlet var tipSliderMinLabel: UILabel!
     @IBOutlet var tipSliderMaxLabel: UILabel!
     
+    // User Defaults
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     /*
             Get Functions
     */
@@ -62,6 +65,10 @@ class ViewController: UIViewController {
         return NSString(string: tipSliderMaxLabel.text!).integerValue
     }
     
+    func getTipMedianPercentage() -> Int {
+        return (getMinTipPercentage() + getMaxTipPercentage()) / 2
+    }
+    
     /*
             Set Functions
     */
@@ -80,10 +87,17 @@ class ViewController: UIViewController {
     
     func setMinTipPercentage(newV: Int){
         tipSliderMinLabel.text = "\(newV)%"
+        tipSlider.minimumValue = Float(newV)
     }
     
     func setMaxTipPercentage(newV: Int){
         tipSliderMaxLabel.text = "\(newV)%"
+        tipSlider.maximumValue = Float(newV)
+    }
+    
+    func setTipMedianPercentage() {
+        var median = (getMinTipPercentage() + getMaxTipPercentage()) / 2
+        tipPercentLabel.text = "\(median)%"
     }
     
     
@@ -118,22 +132,26 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
+        if defaults.boolForKey("default_settings_changed") {
+            setMinTipPercentage(defaults.integerForKey("default_tip_slider_min"))
+            setMaxTipPercentage(defaults.integerForKey("default_tip_slider_max"))
+            setTipMedianPercentage()
+            tipSlider.value = Float(getTipMedianPercentage())
+            defaults.setBool(false, forKey: "default_settings_changed")
+            defaults.synchronize()
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        print("view did appear")
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        print("view will disappear")
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
-        print("view did disappear")
     }
 
 
@@ -148,9 +166,16 @@ class ViewController: UIViewController {
         tipCostLabel.text = "$"
         totalCostLabel.text = "$"
         
-        let startPercent = (Int(tipSliderMaxLabel.text!)! + Int(tipSliderMinLabel.text!)!) / 2
+        if defaults.boolForKey("default_custom_bounds") {
+            setMinTipPercentage(defaults.integerForKey("default_tip_slider_min"))
+            setMaxTipPercentage(defaults.integerForKey("default_tip_slider_max"))
+        } else {
+            setMinTipPercentage(0)
+            setMaxTipPercentage(30)
+        }
         
-        tipPercentLabel.text = "\(startPercent)%"
+        setTipMedianPercentage()
+        tipSlider.value = Float(getTipMedianPercentage())
         
     }
     
